@@ -1,0 +1,118 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #212121;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  color: #eceff1;
+  font-size: 120px;
+  font-weight: 600;
+}
+
+.title-large {
+  height: 130px;
+  margin-left: -5px;
+  opacity: 0.1;
+}
+
+.img-container {
+  display: inline-block;
+  overflow: hidden;
+  margin-left: -2.8px;
+  margin-right: -2.8px;
+  width: 170px;
+  vertical-align: top;
+  border-radius: 0px 0px 80px 80px;
+  animation-name: flow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: -2s;
+  transition-timing-function: cubic-bezier(0, 0.57, 1, 0.46);
+  box-shadow: 2px 2px 16px 2px rgba(0, 0, 0, 0.5);
+}
+
+.second-animation {
+  animation-delay: -1.5s;
+}
+
+.third-animation {
+  animation-delay: -1s;
+}
+
+.fourth-animation {
+  animation-delay: -0.5s;
+}
+
+.fifth-animation {
+  animation-delay: 0s;
+}
+
+.sixth-animation {
+  animation-delay: 0.5s;
+}
+
+.seventh-animation {
+  animation-delay: 1s;
+}
+
+.img {
+  object-fit: cover;
+  width: 170px;
+  height: 100vh;
+  margin-top: -60px;
+}
+
+.nba {
+  margin-top: -20px;
+}
+
+@keyframes flow {
+  0% {
+    height: 20%;
+    border-radius: 0px 0px 30px 30px;
+  }
+  50% {
+    height: 90%;
+    border-radius: 0px 0px 100px 100px;
+  }
+  100% {
+    height: 20%;
+    border-radius: 0px 0px 30px 30px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #img-7 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1028px) {
+  #img-1 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  #img-6 {
+    display: none;
+  }
+}
